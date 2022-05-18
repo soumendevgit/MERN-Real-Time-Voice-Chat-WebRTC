@@ -1,0 +1,36 @@
+.cardWrapper {
+  composes: cardWrapper from "../../../App.module.css";
+}
+
+.buttonWrap {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.tabButton {
+  width: 60px;
+  height: 60px;
+  background-color: #262626;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.tabButton:last-child {
+  margin-left: 20px;
+}
+
+.tabButton.active {
+  background-color: #0077ff;
+}
+
+.actionButtonWrap {
+  composes: actionButtonWrap from "../../../App.module.css";
+}
+
+.bottomParagraph {
+  composes: bottomParagraph from "../../../App.module.css";
+}

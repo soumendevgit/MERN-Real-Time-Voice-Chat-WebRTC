@@ -1,0 +1,16 @@
+.cardWrapper {
+  composes: cardWrapper from "../../../App.module.css";
+}
+.buttonWrap {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.actionButtonWrap {
+  composes: actionButtonWrap from "../../../App.module.css";
+}
+
+.bottomParagraph {
+  composes: bottomParagraph from "../../../App.module.css";
+}

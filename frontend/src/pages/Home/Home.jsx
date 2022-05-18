@@ -1,7 +1,8 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Button from "../../components/Shared/Button/Button";
 import Card from "../../components/Shared/Card/Card";
+import Logo from "../../components/Shared/Logo/Logo";
 import styles from "./Home.module.css";
 const Home = () => {
 
@@ -15,13 +16,13 @@ const Home = () => {
   const navigate = useNavigate();
 
   function startRegister() {
-    navigate('/register')
-    console.log('Clicked');
+    navigate('/authenticate')
+    // console.log('Clicked');
   }
 
   return (
     <div className={styles.cardWrapper}>
-      <Card title="Welcome to Coders House!!!">
+      <Card title="Welcome to Coders House!!!" icon={<Logo/>}>
         <p className={styles.text}>
           We’re working hard to get Codershouse ready for everyone! While we
           wrap up the finishing youches, we’re adding people gradually to make
@@ -29,13 +30,13 @@ const Home = () => {
         </p>
 
         <div>
-          <Button onClick={startRegister} text="Get your username"/>
+          <Button onClick={startRegister} text="Lets Go"/>
         </div>
 
-        <div className={styles.signinWrapper}>
+        {/* <div className={styles.signinWrapper}>
           <span className={styles.hasInvite}>Here an invite text?</span>
           <Link style={signInLinkStyle} to="login">Sign In</Link>
-        </div>
+        </div> */}
       </Card>
     </div>
   );
